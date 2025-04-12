@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(84, 138, 3, 0.74);
+  font-family: "Courier New", Courier, monospace;
+}
+.main-title {
+  margin-top: 100px;
+  font-size: 4rem;
+  text-shadow: 2px 1px 2px rgb(212, 211, 211);
+  letter-spacing: 3px;
+}
+
+.Display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  height: 400px;
+  width: 800px;
+  border-radius: 50%;
+  font-weight: bold;
+  box-shadow: 0px 0px 20px rgb(37, 37, 37);
+}
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: 4.5em;
+}
+.Aswers {
+  position: relative;
+  top: -117px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+}
+.ans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  font-size: 2rem;
+  box-shadow: 2px 3px 5px rgb(37, 37, 37);
+}
+.Right_Ans {
+  background-color: blueviolet;
+}
+.Wrong_Ans {
+  background-color: rgb(6, 9, 187);
+}
+progress {
+  width: 800px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Stop_Game {
+  margin-top: 30px;
+}
+.btn_stop {
+  border: none;
+  background-color: rgb(43, 70, 4);
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgb(37, 37, 37);
+  letter-spacing: 2px;
+}
+
+.btn_stop:hover {
+  background-color: rgba(43, 70, 4, 0.719);
+}
+
+.Start_Game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5, 5, 5, 0.5);
+  height: 100vh;
+}
+.btn_start {
+  border: none;
+  font-size: 5.5rem;
+  padding: 30px 50px;
+  background-color: rgb(34, 150, 5);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(22, 22, 22);
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: 0.3s background-color ease-in-out, 0.3s 30ms color ease-in-out;
+}
+.btn_start:hover {
+  background-color: rgb(23, 105, 3);
+  color: white;
+}
+
+.Score_Card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5, 5, 5, 0.5);
+}
+
+.Score_Card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 300px;
+  width: 500px;
+  background-color: rgb(68, 138, 65);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.Score_Card div h3 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Score_Card div p {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+.Score_Card div p span {
+  font-weight: 800;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding: 15px 15px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px black;
+  transition: 0.3s background-color ease-in-out, 0.3s 30ms color ease-in-out,
+    0.3s box-shadow ease-in-out;
+}
+
+.btn-close:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(235, 234, 234);
+  box-shadow: none;
+}
+.change-speed {
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.visible {
+  opacity: 0;
+}

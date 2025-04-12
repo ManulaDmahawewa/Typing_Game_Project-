@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- -------------------Main Div----------------------- -->
+    <div id="main" class="Main">
+      <h1 class="main-title">Typing Game</h1>
+      <div id="display" class="Display">
+        <h1 class="title">Ready</h1>
+      </div>
+      <div id="aswers" class="Aswers">
+        <div id="right_ans" class="Right_Ans ans">
+          <p>Right <br /><span id="right_count">0</span></p>
+        </div>
+        <div id="wrong_ans" class="Wrong_Ans ans">
+          <p>Wrong <br /><span id="wrong_count">0</span></p>
+        </div>
+      </div>
+      <div class="footer">
+        <progress id="progressBar" max="100" value="0"></progress>
+        <div id="range_bar" class="change-speed visible">
+          <label for="Speed" style="font-weight: bold; font-size: 1.2rem"
+            >Speed</label
+          >
+          <input
+            type="range"
+            name="range"
+            id="range"
+            min="0"
+            max="100"
+            step="10"
+          />
+        </div>
+        <div id="stop_game" class="Stop_Game">
+          <button class="btn_stop">Stop Game</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------Start Game Div---------------------- -->
+
+    <div id="start_game" class="Start_Game">
+      <button class="btn_start">Start Game</button>
+    </div>
+    <!-- ----------------Score Card Div------------------- -->
+    <div id="score_card" class="Score_Card hidden">
+      <button id="Close" class="btn-close">X</button>
+      <div>
+        <h3>Your Score</h3>
+        <p>
+          Right Answers : <span id="total_right" class="Total_Right">0</span>
+        </p>
+        <p>
+          Wrong Answers : <span id="Total_wrong" class="total_wrong">0</span>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
